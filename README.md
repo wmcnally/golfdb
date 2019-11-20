@@ -1,5 +1,9 @@
 # GolfDB: A Video Database for Golf Swing Sequencing
-GolfDB is a high-quality video dataset created for general recognition applications in the sport of golf, and specifically for the task of golf swing sequencing. More info coming soon!
+GolfDB is a high-quality video dataset created for general recognition applications in the sport of golf, and specifically for the task of golf swing sequencing. 
+
+Run generate_splits.py to convert the dataset file to a dataframe and generate the 4 splits. The YouTube urls are provided in the dataset. 
+
+More info coming soon!
 
 ```
 @InProceedings{McNally_2019_CVPR_Workshops,
