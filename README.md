@@ -3,7 +3,7 @@ GolfDB is a high-quality video dataset created for general recognition applicati
 
 Run [generate_splits.py](./data/generate_splits.py) to convert the .mat dataset file to a dataframe and generate the 4 splits. The YouTube urls are provided in the dataset. 
 
-More info coming soon!
+PyTorch code to be uploaded soon!
 
 ```
 @InProceedings{McNally_2019_CVPR_Workshops,
