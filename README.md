@@ -1,11 +1,12 @@
 # GolfDB: A Video Database for Golf Swing Sequencing
 
 ## Introduction
-[GolfDB](https://arxiv.org/abs/1903.06528) is a high-quality video dataset created for general recognition applications 
+GolfDB is a high-quality video dataset created for general recognition applications 
 in the sport of golf, and specifically for the task of golf swing sequencing. 
 
-This repo contains a simple PyTorch implemention of the SwingNet baseline model presented in the paper.
-The model was trained on split 1 without any data augmentation and achieved an average PCE of 71.5 (PCE
+This repo contains a simple PyTorch implemention of the SwingNet baseline model presented in the 
+[paper](https://arxiv.org/abs/1903.06528).
+The model was trained on split 1 **without any data augmentation** and achieved an average PCE of 71.5 (PCE
 of 76.1 reported in the paper is credited to data augmentation including horizontal flipping and affine 
 transformations). 
 
