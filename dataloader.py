@@ -98,7 +98,6 @@ if __name__ == '__main__':
     for i, sample in enumerate(data_loader):
         images, labels = sample['images'], sample['labels']
         events = np.where(labels.squeeze() < 8)[0]
-        # print('{} frames'.format(labels.shape[1]))
         print('{} events: {}'.format(len(events), events))
 
 
