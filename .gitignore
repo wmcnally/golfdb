@@ -1,1 +1,5 @@
 idea/
+data/videos_160
+data/frames_160
+*.pkl
+*.tar
