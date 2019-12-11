@@ -48,8 +48,8 @@ and place 'mobilenet_v2.pth.tar' in the root directory.
 
 ### Evaluate
 * Train your own model by following the steps above or download the pretrained weights 
-[here](https://drive.google.com/file/d/1MBIDwHSM8OKRbxS8YfyRLnUBAdt0nupW/view?usp=sharing). Place 
-'swingnet_1800.pth.tar' in the [models](./models/)  directory.
+[here](https://drive.google.com/file/d/1MBIDwHSM8OKRbxS8YfyRLnUBAdt0nupW/view?usp=sharing). Create a 'models' directory
+if not already created and place 'swingnet_1800.pth.tar' in this directory.
 
 * Run [eval.py](eval.py). If using the pretrained weights provided, the PCE should be 0.715.  
 
