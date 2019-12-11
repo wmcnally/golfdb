@@ -30,7 +30,7 @@ This code is tested under Ubuntu 18.04, CUDA 10.0, cuDNN 7.2 environment with an
 
 Python 3.6.5 version with Anaconda 3 is used for development.
 
-## How to run
+## Getting Started
 Run [generate_splits.py](./data/generate_splits.py) to convert the .mat dataset file to a dataframe and 
 generate the 4 splits.
 
