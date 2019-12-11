@@ -31,7 +31,7 @@ Python 3.6.5 version with Anaconda 3 is used for development.
 
 ## How to run
 Run [generate_splits.py](./data/generate_splits.py) to convert the .mat dataset file to a dataframe and 
-generate the 4 splits. The YouTube urls are provided in the dataset. 
+generate the 4 splits.
 
 ### Train
 * I have provided the preprocessed video clips for a frame size of 160x160 (download 
