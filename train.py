@@ -4,6 +4,7 @@ from util import *
 import torch
 from torch.utils.data import DataLoader
 from torchvision import transforms
+import os
 
 
 if __name__ == '__main__':
@@ -47,6 +48,9 @@ if __name__ == '__main__':
     optimizer = torch.optim.Adam(filter(lambda p: p.requires_grad, model.parameters()), lr=0.001)
 
     losses = AverageMeter()
+
+    if not os.path.exists('models'):
+        os.mkdir('models')
 
     i = 0
     while i < iterations:
