@@ -55,11 +55,9 @@ if not already created and place 'swingnet_1800.pth.tar' in this directory.
 * Run [eval.py](eval.py). If using the pre-trained weights provided, the PCE should be 0.715.  
 
 ### Test your own video
-* Follow steps above to download pre-trained weights. Then in the terminal: 
+* Follow steps above to download pre-trained weights. Then in the terminal: `python3 test_video.py -p test_video.mp4`
 
-`python3 test_video.py -p test_video.mp4`
-
-**Note:** This code requires the sample video to be cropped and cut to bound a single golf swing. 
+* This code requires the sample video to be cropped and cut to bound a single golf swing. 
 I used online video [cropping](https://ezgif.com/crop-video) and [cutting](https://online-video-cutter.com/) 
 tools for my golf swing video. See test_video.mp4 for reference.
 
