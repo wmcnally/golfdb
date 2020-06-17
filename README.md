@@ -6,8 +6,8 @@ in the sport of golf, and specifically for the task of golf swing sequencing.
 
 This repo contains a simple PyTorch implemention of the SwingNet baseline model presented in the 
 [paper](https://arxiv.org/abs/1903.06528).
-The model was trained on split 1 **without any data augmentation** and achieved an average PCE of 71.5 (PCE
-of 76.1 reported in the paper is credited to data augmentation including horizontal flipping and affine 
+The model was trained on split 1 **without any data augmentation** and achieved an average PCE of 71.5% (PCE
+of 76.1% reported in the paper is credited to data augmentation including horizontal flipping and affine 
 transformations). 
 
 If you use this repo please cite the GolfDB paper:
