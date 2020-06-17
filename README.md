@@ -57,7 +57,7 @@ if not already created and place 'swingnet_1800.pth.tar' in this directory.
 ### Test your own video
 * Follow steps above to download pre-trained weights. Then in the terminal: `python3 test_video.py -p test_video.mp4`
 
-* This code requires the sample video to be cropped and cut to bound a single golf swing. 
+* **Note:** This code requires the sample video to be cropped and cut to bound a single golf swing. 
 I used online video [cropping](https://ezgif.com/crop-video) and [cutting](https://online-video-cutter.com/) 
 tools for my golf swing video. See test_video.mp4 for reference.
 
