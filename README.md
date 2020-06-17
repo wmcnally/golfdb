@@ -48,10 +48,19 @@ and place 'mobilenet_v2.pth.tar' in the root directory.
 * Run [train.py](train.py)
 
 ### Evaluate
-* Train your own model by following the steps above or download the pretrained weights 
+* Train your own model by following the steps above or download the pre-trained weights 
 [here](https://drive.google.com/file/d/1MBIDwHSM8OKRbxS8YfyRLnUBAdt0nupW/view?usp=sharing). Create a 'models' directory
 if not already created and place 'swingnet_1800.pth.tar' in this directory.
 
-* Run [eval.py](eval.py). If using the pretrained weights provided, the PCE should be 0.715.  
+* Run [eval.py](eval.py). If using the pre-trained weights provided, the PCE should be 0.715.  
+
+### Test your own video
+* Follow steps above to download pre-trained weights. Then in the terminal: 
+
+`python3 test_video.py -p test_video.mp4`
+
+**Note:** This code requires the sample video to be cropped and cut to bound a single golf swing. 
+I used online video [cropping](https://ezgif.com/crop-video) and [cutting](https://online-video-cutter.com/) 
+tools for my golf swing video. See test_video.mp4 for reference.
 
 Good luck!
