@@ -84,9 +84,10 @@ if __name__ == '__main__':
     except:
         print("Model weights not found. Download model weights and place in 'models' folder. See README for instructions")
 
-
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    print('Using device:', device)
     model.load_state_dict(save_dict['model_state_dict'])
-    model.cuda()
+    model.to(device)
     model.eval()
     print("Loaded model weights")
 
@@ -111,11 +112,15 @@ if __name__ == '__main__':
     print('Predicted event frames: {}'.format(events))
     cap = cv2.VideoCapture(args.path)
 
+    confidence = []
     for i, e in enumerate(events):
-        confidence = probs[e, i]
+        confidence.append(probs[e, i])
+    print('Condifence: {}'.format([np.round(c, 3) for c in confidence]))
+
+    for i, e in enumerate(events):
         cap.set(cv2.CAP_PROP_POS_FRAMES, e)
         _, img = cap.read()
-        cv2.putText(img, '{:.3f}'.format(confidence), (20, 20), cv2.FONT_HERSHEY_DUPLEX, 0.75, (0, 0, 255))
+        cv2.putText(img, '{:.3f}'.format(confidence[i]), (20, 20), cv2.FONT_HERSHEY_DUPLEX, 0.75, (0, 0, 255))
         cv2.imshow(event_names[i], img)
         cv2.waitKey(0)
         cv2.destroyAllWindows()
