@@ -23,12 +23,6 @@ year = {2019}
 
 ## Dependencies
 * [PyTorch 1.3](https://pytorch.org/)
-* [CUDA](https://developer.nvidia.com/cuda-downloads)
-* [cuDNN](https://developer.nvidia.com/cudnn)
-
-This code is tested under Ubuntu 18.04, CUDA 10.0, cuDNN 7.2 environment with an NVIDIA Titan Xp GPU
-
-Python 3.6.5 version with Anaconda 3 is used for development.
 
 ## Getting Started
 Run [generate_splits.py](./data/generate_splits.py) to convert the .mat dataset file to a dataframe and 
