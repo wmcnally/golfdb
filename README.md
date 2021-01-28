@@ -1,5 +1,7 @@
 # GolfDB: A Video Database for Golf Swing Sequencing
 
+The code in this repository is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/). 
+
 ## Introduction
 GolfDB is a high-quality video dataset created for general recognition applications 
 in the sport of golf, and specifically for the task of golf swing sequencing. 
