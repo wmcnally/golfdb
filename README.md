@@ -24,7 +24,7 @@ year = {2019}
 ```
 
 ## Dependencies
-* [PyTorch 1.3](https://pytorch.org/)
+* [PyTorch](https://pytorch.org/)
 
 ## Getting Started
 Run [generate_splits.py](./data/generate_splits.py) to convert the .mat dataset file to a dataframe and 
