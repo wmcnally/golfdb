@@ -1,5 +1,7 @@
 # GolfDB: A Video Database for Golf Swing Sequencing
 
+The code in this repository is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/). 
+
 ## Introduction
 GolfDB is a high-quality video dataset created for general recognition applications 
 in the sport of golf, and specifically for the task of golf swing sequencing. 
@@ -22,11 +24,7 @@ year = {2019}
 ```
 
 ## Dependencies
-* [PyTorch](https://pytorch.org/)
-* [CUDA](https://developer.nvidia.com/cuda-downloads)
-* [cuDNN](https://developer.nvidia.com/cudnn)
-
-The code was implemented using Python 3.6.5, PyTorch 1.3, CUDA 10.0, and cuDNN 7.2 with an NVIDIA Titan Xp GPU
+* [PyTorch 1.3](https://pytorch.org/)
 
 ## Getting Started
 Run [generate_splits.py](./data/generate_splits.py) to convert the .mat dataset file to a dataframe and 
