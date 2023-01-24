@@ -26,6 +26,12 @@ year = {2019}
 ## Dependencies
 * [PyTorch](https://pytorch.org/)
 
+## Installation
+1. Build the docker image:
+`docker build -t golf-db .`
+2. Run the docker container:
+`docker run --name golf-db --gpus all -it -v "path/to/repo":"/golfdb" --shm-size <your-memory-size (16g)> golf-db`
+
 ## Getting Started
 Run [generate_splits.py](./data/generate_splits.py) to convert the .mat dataset file to a dataframe and 
 generate the 4 splits.
